@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+
+  calculator-app:
+    container_name: calculator-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - 80:3000

@@ -18,7 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "docker": "docker build -t calculator:{version} .",
+    "react-docker": "docker run -p 3000:80 calculator"
   },
   "eslintConfig": {
     "extends": [
